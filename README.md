@@ -34,9 +34,17 @@
 
 ## Changelog
 
-- v1.0.1
+- v1.3.1
   - Update `README.md`
+  - Merge the latest changes from [tzhuan](https://github.com/tzhuan/ntu-thesis)
+- v1.3
+  - Enable fake bold/italic font by default, thanks to [alan23273850](https://github.com/alan23273850).
+- v1.2
+  - Refine the certification page.
+- v1.1
+  - New switch to turn on/off the watermark and DOI for the first page, thanks to [louis2889184](https://github.com/louis2889184).
 - v1.0
+  - Do not show watermark in the cover pages, thanks to [louis2889184](https://github.com/louis2889184).
   - The first fork release
   - Add Chinese support
   - Add NTU watermark & password protection
@@ -44,6 +52,19 @@
   - Add setup
   - Add hypertext links in the document
   - Adjust line spacing
+- v0.9
+  - Support inserting certification pdf file, thanks to [dragonkao730](https://github.com/dragonkao730).
+- v0.8
+  - Support watermark with transparent background, thanks to [zipong](https://github.com/zipong).
+- v0.7
+  - Add keywords and PDF properties supports, thanks to [moneycat](https://github.com/moneycat).
+- v0.6
+  - Add DOI support, thanks to [WeiTang114](https://github.com/WeiTang114).
+- v0.5.1
+  - Avoid removing pdf files mistakenly.
+- v0.5
+  - Fix a typo, thanks to [dyinpao](https://github.com/dyinpao).
+  - Support watermark and password setting, thanks to [shaform](https://github.com/shaform) and [qcl](https://github.com/qcl).
 - v0.4
   - Rename \year, \month and \day to avoid the conflicts. Thanks to [shaform](https://github.com/shaform).
 - v0.3.1

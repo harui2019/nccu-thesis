@@ -3,6 +3,7 @@ LIBVERSION=thesis-lib
 LATEX=xelatex
 BIBTEX=bibtex
 RM=rm -f
+NTU_WATERMARK_LINK=https://www.lib.ntu.edu.tw/doc/CL/watermark.pdf
 
 # use your own password
 PDF_PWD=rdkRq8u8lAzARCIPa8Us
@@ -16,7 +17,31 @@ files := $(files) $(wildcard images/*) $(wildcard pdfs/*.pdf)
 
 .SUFFIXES: .tex
 
+ifdef PASSWORD
+all: $(MAIN).pdf $(MAIN)-with-pass.pdf
+else
 all: $(MAIN).pdf
+endif
+
+ifdef WATERMARK
+TEXFLAG+="\def\withwatermark{1} "
+endif
+
+ifdef DOI
+TEXFLAG+="\def\withdoi{1} "
+endif
+
+ifdef CERTIFICATION
+TEXFLAG+="\def\withcertification{1} "
+endif
+
+ifdef FIRSTPAGE
+TEXFLAG+="\def\firstpage{1} "
+else
+TEXFLAG+="\def\excludefirstpage{1} "
+endif
+
+TEXFLAG+="\input{$(MAIN)}"
 
 $(MAIN).pdf: $(files) src/without-watermark.tex
 	cp src/without-watermark.tex watermark.tex
