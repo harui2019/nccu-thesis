@@ -6,8 +6,8 @@
 
 - 這份模板是從[交通大學碩博士論文 XeLaTeX 模版](https://github.com/Po-haoHuang/nctu-thesis) Fork 而來
   ，前身是 [tzhuan](http://github.com/tzhuan) 的
-  [臺灣大學碩博士論文 XeLaTeX 模板](https://github.com/tzhuan/ntu-thesis)。 <br>
-- 最後則由 [walker088](https://github.com/Walker088) 在撰寫論文期間根據[政大圖書館](http://www.lib.nccu.edu.tw/thesis/download.html) 所提供的論文格式規範加以修改。
+  [臺灣大學碩博士論文 XeLaTeX 模板](https://github.com/tzhuan/ntu-thesis)。
+- 最後則由 [walker088](https://github.com/Walker088) 在撰寫論文期間根據 [政大圖書館](http://www.lib.nccu.edu.tw/thesis/download.html) 所提供的論文格式規範加以修改。
 
 ---
 
@@ -19,9 +19,9 @@
 
 ## 快速開始
 
-- 這份文件主要提供在 [overleaf](https://www.overleaf.com/) 上編輯撰寫，將這個 repo 下載成 zip 後就可以直接輸入 overleaf 順利編譯。
-- 主要章節會在 ./chapter/ 資料夾裡面，可以自行新增。
-- 章節順序請在 ./thesis.tex 內編排修改。
+- 這份文件主要提供在 [Overleaf](https://www.overleaf.com/) 上編輯撰寫，將這個 repo 下載成 zip 後就可以直接輸入 overleaf 順利編譯。
+- 主要章節會在 `./chapter/` 資料夾裡面，可以自行新增。
+- 章節順序請在 `./thesis.tex` 內編排修改。
 - **_口試委員審定書_** 會由系辦助教在口試當天協助印出，口試完成後將有口委簽名的版本掃描成 PDF 檔，取代 `./pdfs/cert.pdf` ，就可以修改成自己的審定書了。
 
 ### 備註
@@ -34,6 +34,8 @@
 
 ## Changelog
 
+- v1.0.1
+  - Update `README.md`
 - v1.0
   - The first fork release
   - Add Chinese support
